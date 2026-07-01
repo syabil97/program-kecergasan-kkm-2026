@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Program Kecergasan KKM 2026</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span>
+        <span class="eyebrow">Kementerian Kesihatan Malaysia</span>
+        <span class="title">Program Kecergasan KKM 2026</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Buka menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Utama</a></li>
+      <li><a href="sukan.html">Jadual Sukan</a></li>
+      <li><a href="pingat.html">Kiraan Pingat</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="info.html">Info</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <span class="eyebrow">14 – 20 Ogos 2026 &middot; Kompleks Sukan Negara</span>
+      <h1>Bersatu Bertanding, Sihat Bersama</h1>
+      <p>Ikuti keputusan terkini, jadual acara, kiraan pingat dan galeri gambar sepanjang Program Kecergasan KKM 2026 di sini.</p>
+      <div class="hero-meta">
+        <div><strong id="stat-hari">—</strong><span>Hari Karnival</span></div>
+        <div><strong id="stat-acara">—</strong><span>Jumlah Acara</span></div>
+        <div><strong id="stat-pasukan">—</strong><span>Kontinjen</span></div>
+      </div>
+    </div>
+
+    <div class="scoreboard-mini">
+      <div class="sb-title">Kiraan Pingat Teratas</div>
+      <div class="sb-head">
+        <span>#</span><span>Pasukan</span><span>E</span><span>P</span><span>G</span><span>J</span>
+      </div>
+      <div id="mini-scoreboard">
+        <div class="loading-pulse">Memuatkan...</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Hari Ini</span>
+        <h2>Acara Akan Berlangsung</h2>
+      </div>
+      <a href="sukan.html" class="badge badge-akan_datang">Lihat Jadual Penuh &rarr;</a>
+    </div>
+    <div class="grid grid-3" id="acara-terkini">
+      <div class="loading-pulse">Memuatkan acara...</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Pengumuman</span>
+        <h2>Info Terkini</h2>
+      </div>
+      <a href="info.html" class="badge badge-akan_datang">Lihat Semua &rarr;</a>
+    </div>
+    <div id="info-terkini">
+      <div class="loading-pulse">Memuatkan info...</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <strong>Program Kecergasan KKM 2026</strong> &middot; Kementerian Kesihatan Malaysia
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

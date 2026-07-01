@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jadual Sukan — Karnival Sukan KKM 2026</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span>
+        <span class="eyebrow">Kementerian Kesihatan Malaysia</span>
+        <span class="title">Karnival Sukan 2026</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Buka menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Utama</a></li>
+      <li><a href="sukan.html">Jadual Sukan</a></li>
+      <li><a href="pingat.html">Kiraan Pingat</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="info.html">Info</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Jadual</span>
+        <h2>Semua Acara Sukan</h2>
+      </div>
+      <select id="tapis-status" style="font-family:var(--font-display);text-transform:uppercase;font-size:13px;padding:8px 12px;border-radius:6px;border:1px solid #ccc;">
+        <option value="">Semua Status</option>
+        <option value="akan_datang">Akan Datang</option>
+        <option value="sedang_berlangsung">Sedang Berlangsung</option>
+        <option value="selesai">Selesai</option>
+        <option value="ditangguhkan">Ditangguhkan</option>
+      </select>
+    </div>
+
+    <div class="grid grid-3" id="senarai-acara">
+      <div class="loading-pulse">Memuatkan acara...</div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <strong>Karnival Sukan KKM 2026</strong> &middot; Kementerian Kesihatan Malaysia
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/sukan.js"></script>
+</body>
+</html>
